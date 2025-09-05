@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paul Bennial G – Resume</title>
+  <style>
+    /* ===== CSS Reset (minimal) ===== */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+
+    /* ===== Theme ===== */
+    :root {
+      --bg: #f7f7f8;
+      --paper: #ffffff;
+      --ink: #14151a;
+      --muted: #5a5f73;
+      --accent: #2d6cdf;
+      --chip: #eef2ff;
+      --rule: #e7e8ec;
+    }
+
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+
+    .sheet {
+      background: var(--paper);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.06);
+      padding: 32px 36px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px 24px;
+      align-items: start;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 4.2vw, 42px);
+      letter-spacing: 0.2px;
+      line-height: 1.1;
+      margin: 0 0 6px 0;
+    }
+
+    .title {
+      font-size: clamp(16px, 2.2vw, 18px);
+      color: var(--accent);
+      font-weight: 700;
+      margin: 0 0 6px 0;
+    }
+
+    .contact {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .contact a { color: var(--accent); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+
+    .print-btn {
+      align-self: start;
+      border: 1px solid var(--rule);
+      background: #fff;
+      padding: 8px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .print-btn:hover { border-color: var(--accent); }
+
+    /* ===== Sections ===== */
+    section { padding: 18px 0; }
+    h2 {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+      letter-spacing: .2px;
+    }
+    .rule { height: 1px; background: var(--rule); margin: 10px 0 16px; }
+
+    .summary { color: var(--ink); }
+
+    /* Experience */
+    .job { margin: 0 0 18px 0; }
+    .job .role { font-weight: 700; }
+    .job .meta { color: var(--muted); font-size: 14px; margin-top: 2px; }
+    ul.bullets { margin: 8px 0 0 20px; }
+    ul.bullets li { margin: 6px 0; }
+
+    /* Education */
+    .edu-item { margin: 0 0 14px 0; }
+    .edu-item .degree { font-weight: 700; }
+    .edu-item .meta { color: var(--muted); font-size: 14px; margin-top: 2px; }
+
+    /* Skills */
+    .skill-block { margin: 8px 0 10px 0; }
+    .skill-block h3 { font-size: 14px; margin: 0 0 6px 0; color: var(--muted); }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { background: var(--chip); border: 1px solid #dfe3ff; padding: 6px 10px; border-radius: 999px; font-size: 13px; }
+
+    /* Certifications */
+    .certs li { margin: 6px 0; }
+
+    /* Footer */
+    footer { color: var(--muted); font-size: 12px; text-align: center; padding-top: 8px; border-top: 1px solid var(--rule); }
+
+    /* ===== Print (A4-friendly) ===== */
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; padding: 0; }
+      .sheet { box-shadow: none; border-radius: 0; padding: 12mm 14mm; }
+      .print-btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="sheet">
+      <header>
+        <div>
+          <h1>Paul Bennial G</h1>
+          <p class="title">Supporting Engineer | Data Analyst</p>
+          <p class="contact">
+            <a href="tel:+917339595721">+91 7339595721</a> &nbsp;|&nbsp;
+            <a href="mailto:bennialp3@gmail.com">bennialp3@gmail.com</a> &nbsp;|&nbsp;
+            <a href="https://www.linkedin.com/in/paul-bennial-707420239" target="_blank" rel="noopener">linkedin.com/in/paul-bennial-707420239</a>
+          </p>
+        </div>
+        <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+      </header>
+
+      <section id="summary">
+        <h2>Professional Summary</h2>
+        <div class="rule"></div>
+        <p class="summary">
+          Support Engineer with 1.6 year of experience in troubleshooting, system administration, and data analysis. Proficient in SQL and Python, seeking to leverage technical expertise and analytical skills in a Data Analyst role.
+        </p>
+      </section>
+
+      <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="rule"></div>
+        <article class="job">
+          <div class="role">Supporting Engineer (with Training Experience)</div>
+          <div class="meta">Kent Intelligent Transportation Systems Pvt. Ltd. (KENT ITS) — (Project) L&amp;T Krishnagiri Walajahpet Tollway Pvt Ltd, Pallikonda (Vellore), Tamil Nadu | Jan 2024 – Jul 2025</div>
+          <ul class="bullets">
+            <li>Guided junior team members on troubleshooting methods, demonstrating mentoring ability.</li>
+            <li>Developed training notes to simplify technical concepts for non-technical users.</li>
+            <li>Applied analytical thinking and problem-solving in system administration tasks.</li>
+            <li>Hands-on experience with Data Analysis, SQL, and Python in practical environments.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="rule"></div>
+        <div class="edu-item">
+          <div class="degree">Master of Science in Mathematics</div>
+          <div class="meta">Karpagam Academy of Higher Education — Coimbatore, Tamil Nadu | Pass-out: 2019–2021 | CGPA: 6.7 | Graduated: May 2021</div>
+        </div>
+        <div class="edu-item">
+          <div class="degree">Bachelor of Education</div>
+          <div class="meta">Centwin College of Education — Dharapuram, Tamil Nadu | Pass-out: 2021–2024 | Graduated: Jul 2024</div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="rule"></div>
+
+        <div class="skill-block">
+          <h3>Teaching Skills</h3>
+          <div class="chips">
+            <span class="chip">Lesson Planning & Curriculum Design</span>
+            <span class="chip">Classroom Management</span>
+            <span class="chip">Student Assessment & Evaluation</span>
+            <span class="chip">Interactive Teaching Techniques</span>
+            <span class="chip">Mentoring & Engagement</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <h3>Mathematical Expertise</h3>
+          <div class="chips">
+            <span class="chip">Algebra</span>
+            <span class="chip">Calculus</span>
+            <span class="chip">Geometry</span>
+            <span class="chip">Trigonometry</span>
+            <span class="chip">Probability & Statistics</span>
+            <span class="chip">Real Analysis</span>
+            <span class="chip">Linear Algebra</span>
+            <span class="chip">Discrete Mathematics</span>
+            <span class="chip">Mathematical Modeling</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <h3>Technical & Analytical</h3>
+          <div class="chips">
+            <span class="chip">Problem Solving</span>
+            <span class="chip">Logical Reasoning</span>
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Data Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <h3>Soft Skills</h3>
+          <div class="chips">
+            <span class="chip">Communication</span>
+            <span class="chip">Patience</span>
+            <span class="chip">Critical Thinking</span>
+            <span class="chip">Collaboration</span>
+            <span class="chip">Adaptability</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="rule"></div>
+        <ul class="certs">
+          <li>Advanced Diploma in Python Programming, CSC Computer Education (2021)</li>
+          <li>Google Advanced Data Analyst Certification, Coursera (Pursuing)</li>
+          <li>Foundations of Data Science (Feb 2025)</li>
+          <li>Get Started with Python (Pursuing)</li>
+          <li>Go Beyond the Numbers: Translate Data into Insight (Pursuing)</li>
+        </ul>
+      </section>
+
+      <footer>
+        © <span id="year"></span> Paul Bennial G — Coimbatore, Tamil Nadu
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Update year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
